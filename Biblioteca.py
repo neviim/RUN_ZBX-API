@@ -10,7 +10,5 @@ from Import import *
 from ITService import *
 from Item import *
 
-
-zapi = ZabbixAPI(server)
+zapi = ZabbixAPI(url=server, user=username, password=password)
 zapi.session.verify = False
-zapi.login(username,password)
